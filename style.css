@@ -1,0 +1,134 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.btnScrollToTop {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  right: 10px;
+  bottom: -10%;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+
+.btnScrollToTop.active {
+  bottom: 5px;
+  pointer-events: auto;
+  opacity: 0.9;
+}
+
+.card-all {
+  display: flex;
+  justify-content: center;
+}
+
+.grayscale {
+  filter: grayscale(70%);
+}
+
+figcaption {
+  position: absolute;
+  top: 200px;
+  left: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .banner-container {
+    margin-top: 60px;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 90px;
+    left: 20px;
+    right: 20px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 340px) {
+  .banner-container {
+    margin-top: 60px;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    right: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .banner-container {
+    margin-top: 65px;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 112px;
+    left: 20px;
+    right: 20px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-container {
+    margin-top: 70px;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    right: 20px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .banner-container {
+    margin-top: 65px;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    right: 20px;
+  }
+  h3 {
+    width: 1000px;
+    font-size: 40px;
+  }
+}
